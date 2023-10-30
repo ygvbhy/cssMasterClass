@@ -1,6 +1,9 @@
 .container {
   display: flex;
+  height: 100vh;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   gap: 10px;
 }
 
@@ -10,4 +13,7 @@
   background-color: tomato;
   font-size: 36px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
