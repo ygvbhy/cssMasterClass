@@ -1,15 +1,10 @@
 .container {
   display: flex;
   height: 100vh;
-  justify-content: space-between;
-  row-gap: 10px;
-  column-gap: 20px;
-  align-items: center;
-  align-content: center;
+  justify-content: center;
 }
 
 .box {
-  width: 200px;
   height: 200px;
   background-color: tomato;
   font-size: 36px;
@@ -20,9 +15,11 @@
 }
 
 .box:first-child {
-  align-self: flex-start;
+  background-color: tomato;
+  flex-grow: 2;
 }
 
 .box:last-child {
-  align-self: flex-end;
+  background-color: teal;
+  flex-grow: 1;
 }
