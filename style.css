@@ -1,32 +1,16 @@
 .container {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 200px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
 }
 
 .box {
-  height: 400px;
   background-color: tomato;
-  font-size: 36px;
-  color: white;
   display: flex;
-  justify-content: center;
+  color: white;
+  font-size: 28px;
   align-items: center;
-}
-
-.box:first-child {
-  background-color: tomato;
-  /* flex-grow: 1; */
-  /* flex-shrink: 0; */
-  /* flex-basis: 500px; */
-  /* 위의 3개의 값과 flex 의 3개의 값이 같음 
-    너비 뿐만 아니라 주축을 기준으로 크기가 결정됨
-    column 일땐 주축이 세로 이므로 height 가 지정됨.
-  */
-  flex: 1 0 500px;
-}
-
-.box:last-child {
-  background-color: teal;
-  flex-grow: 1;
+  justify-content: center;
 }
